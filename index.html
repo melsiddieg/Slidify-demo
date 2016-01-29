@@ -13,7 +13,9 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -91,15 +93,27 @@ with(iris, boxplot(Petal.Length~Species,col=viridis(3)))
     <h2>Question 1</h2>
   </hgroup>
   <article data-timings="">
-    <p>What is right R syntax to extract the 4th element in the third couln from a dataframe named df?</p>
+    
+<div class="quiz quiz-single well ">
+  <p>What is right R syntax to extract the 4th element in the third couln from a dataframe named df?</p>
 
 <ol>
-<li>df[3:4]<br></li>
-<li><strong>df[3,4]</strong><br></li>
-<li>df[c(3,4),]<br></li>
-<li>df[4,3]<br></li>
+<li> df[3:4]<br></li>
+<li> <em>df[3,4]</em><br></li>
+<li> df[c(3,4),]<br></li>
+<li> df[4,3]<br></li>
 </ol>
 
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-explanation">
+  <p>Because dataframe is 2D </p>
+
+</div>
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -141,6 +155,18 @@ with(iris, boxplot(Petal.Length~Species,col=viridis(3)))
   <![endif]-->
 </body>
   <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
   
   <!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
