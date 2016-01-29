@@ -3,10 +3,10 @@ title       : Introduction to R
 subtitle    : Slidify
 author      : Mohammed Omar
 job         : Researcher/Bioinformatician
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+framework   : beamer        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [quiz]            # {mathjax, quiz, bootstrap}
+widgets     : [quiz,bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 
