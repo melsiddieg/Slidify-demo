@@ -9,7 +9,7 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-transition  : rotate
+
 ---
 
 ## Read-And-Delete
@@ -43,4 +43,16 @@ with(iris, boxplot(Petal.Length~Species,col=viridis(3)))
 
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
+---
+
+## Question 1
+
+What is right R syntax to extract the 4th element in the third couln from a dataframe named df?
+
+1. df[3:4]  
+2. __df[3,4]__   
+3. df[c(3,4),]  
+4. df[4,3]  
+
+*** .explanation Because dataframe is 2D 
 
