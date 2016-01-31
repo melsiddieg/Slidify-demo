@@ -3,12 +3,13 @@ title       : Introduction to R
 subtitle    : Slidify
 author      : Mohammed Omar
 job         : Researcher/Bioinformatician
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+framework   : io2012       # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [bootstrap,quiz,interactive]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
+
 
 ---
 
@@ -17,6 +18,7 @@ knit        : slidify::knit2slides
 1. Edit YAML front matter
 2. Write using R Markdown
 3. Use an empty line followed by three dashes to separate slides!
+
 
 --- .class #id 
 
@@ -59,26 +61,22 @@ Because dataframe is 2D
 *** .hint
 Remember a dataframe is two-dimensional
 
---- &interactive
+---
 
-## Interactive console
+## Two Column Layout   
+This slide has two columns
+*** left
+- point 1
+- point 2
+- point 3
+*** right
+- point 1
+- point 2
+- point 3
+## Slide with Bullets
 
-
-```r
-hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
-n1 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
-```
-
-```
-## Error in eval(expr, envir, enclos): could not find function "nPlot"
-```
-
-```r
-n1
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'n1' not found
-```
+- Bullet 1
+- Bullet 2
+- Bullet 3
 
 
