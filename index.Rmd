@@ -53,7 +53,7 @@ What is right R syntax to extract the 4th element in the third couln from a data
 4. df[4,3]  
 
 *** .explanation 
-Because dataframe is 2D 
+Because dataframe is 2D (two-dimensional), the first dimension is the row and the second dimensioon is the column
 *** .hint
 Remember a dataframe is two-dimensional
 
